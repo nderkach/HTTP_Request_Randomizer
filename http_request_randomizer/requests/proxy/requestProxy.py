@@ -33,7 +33,7 @@ class RequestProxy:
     def __init__(self, web_proxy_list=[], sustain=False, timeout=5, protocol=Protocol.HTTP):
         self.logger = logging.getLogger()
         self.logger.addHandler(handler)
-        self.logger.setLevel(0)
+        self.logger.setLevel(40)
         self.userAgent = UserAgentManager()
 
         #####
